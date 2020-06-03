@@ -21,6 +21,7 @@ type ServerInformation struct {
 }
 
 // GetStat get stats
+// stats
 func GetStat() *ServerInformation {
 	memory, err := memory.Get()
 	if err != nil {

@@ -26,6 +26,7 @@ func getEnvOrDie(key string) string {
 }
 
 // Launch launches the daemon
+// recursive
 func (app *App) collectInfo(channel chan *ServerInformation) {
 	stat := GetStat()
 	if stat != nil {
